@@ -16,7 +16,7 @@ public class TransactionDaoImpl implements TransactionDao {
 
     //Create a constructor and initialize a list of transactions
 
-    public TransactionDaoImpl(List<Transaction> storage) {
+    public TransactionDaoImpl() {
         this.storage = new ArrayList<>();
     }
 

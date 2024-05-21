@@ -13,7 +13,7 @@ public class WalletDaoImpl implements WalletDao {
     private  List< Wallet> storage;
 
     //Create constructor and initialize a new list
-    public WalletDaoImpl(List<Wallet> storage) {
+    public WalletDaoImpl() {
         //Print a message for creating and initializing the list
         System.out.println("Creating and initializing the list...");
         this.storage = new ArrayList<>();

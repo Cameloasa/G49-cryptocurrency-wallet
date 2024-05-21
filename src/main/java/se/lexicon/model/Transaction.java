@@ -29,7 +29,6 @@ public class Transaction {
         //Validation for amount
         if (amount.compareTo(BigDecimal.ZERO) <= 0)
             throw new IllegalArgumentException("Amount must be positive");
-
         this.type = type;
         this.amount = amount;
         this.walletId = walletId;
