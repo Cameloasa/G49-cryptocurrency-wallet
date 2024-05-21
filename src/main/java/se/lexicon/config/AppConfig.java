@@ -15,7 +15,7 @@ import se.lexicon.service.impl.WalletManagementImpl;
 
 public class AppConfig {
 
-
+     /*
     @Bean
     public TransactionDaoImpl transactionDao() {
         return new TransactionDaoImpl();
@@ -34,7 +34,7 @@ public class AppConfig {
     @Bean
     public WalletManagementImpl walletManagement() {
         return new WalletManagementImpl(walletDao());
-    }
+    }*/
 
 
 }
