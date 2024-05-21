@@ -8,9 +8,9 @@ import java.util.UUID;
 
 public class Wallet {
 
-    private String id;//uuid
-    private String walletName;//name
-    private Map<Cryptocurrency, BigDecimal> cryptocurrencies;//enumeration, bigdecimal for amount
+    private final String id;//uuid
+    private final String walletName;//name
+    private final Map<Cryptocurrency, BigDecimal> cryptocurrencies;//enumeration, bigdecimal for amount
 
 
     //Constructor
