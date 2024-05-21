@@ -25,7 +25,7 @@ public class Transaction {
         this.timestamp = timestamp;
     }
     //Constructor to create new transaction
-    public Transaction(String type, BigDecimal amount, String walletId, String cryptocurrencySymbol, String description, LocalDateTime timestamp) {
+    public Transaction(String type, BigDecimal amount, String walletId, String cryptocurrencySymbol) {
         //Validation for amount
         if (amount.compareTo(BigDecimal.ZERO) <= 0)
             throw new IllegalArgumentException("Amount must be positive");
@@ -34,8 +34,8 @@ public class Transaction {
         this.amount = amount;
         this.walletId = walletId;
         this.cryptocurrencySymbol = cryptocurrencySymbol;
-        this.description = description;
-        this.timestamp = timestamp;
+        this.timestamp = LocalDateTime.now();
+
     }
 
     public String getId() {
